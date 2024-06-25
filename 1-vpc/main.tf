@@ -1,5 +1,5 @@
 module "vpc" {
-    source = "../../terraform-aws-vpc-advanced_module"
+    source = "git::https://github.com/sivadevopsdaws74s/terraform-aws-vpc-advanced.git"
     project_name = var.project_name
     env = var.env
     cidr_block = var.cidr_block

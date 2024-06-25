@@ -39,7 +39,7 @@ resource "aws_launch_template" "catalogue" {
 resource "aws_autoscaling_group" "catalogue" {
   name                      = "${var.project_name}-${var.common_tags.Component}"
   max_size                  = 5
-  min_size                  = 2
+  min_size                  = 1
   health_check_grace_period = 300
   health_check_type         = "ELB"
   desired_capacity          = 2

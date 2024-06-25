@@ -1,5 +1,5 @@
 module "vpn_sg" {
-    source = "../../terraform-aws-securitygroup-mod"
+    source = "git::https://github.com/sivadevopsdaws74s/terraform-aws-securitygroup.git"
     project_name = var.project_name
     sg_name = "roboshop-vpn"
     sg_description = "Allowing All ports from my Home IP"
